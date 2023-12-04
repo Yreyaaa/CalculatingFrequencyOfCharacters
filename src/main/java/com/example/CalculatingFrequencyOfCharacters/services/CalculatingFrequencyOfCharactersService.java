@@ -25,7 +25,7 @@ public class CalculatingFrequencyOfCharactersService {
         StringBuilder result = new StringBuilder();
         for (int i = 0; i < resultList.size(); i++) {
             Map.Entry<Character, Integer> item = resultList.get(i);
-            result.append(String.format("'%s':%d, ", item.getKey(), item.getValue()));
+            result.append(String.format("\"%s\":%d, ", item.getKey(), item.getValue()));
             if (i == resultList.size() - 1) {
                 result.delete(result.length() - 2, result.length());
             }

@@ -28,7 +28,7 @@ public class ControllerTest {
     public void getCountCharsToQueryTest() {
 
         String testRequest = "lsdg LHUppp96  asd";
-        String testResponse = "' ':3, 'p':3, 's':2, 'd':2, 'a':1, 'U':1, '6':1, 'g':1, 'H':1, '9':1, 'l':1, 'L':1";
+        String testResponse = "\" \":3, \"p\":3, \"s\":2, \"d\":2, \"a\":1, \"U\":1, \"6\":1, \"g\":1, \"H\":1, \"9\":1, \"l\":1, \"L\":1";
 
         Assertions.assertEquals(testResponse, calculatingFrequencyOfCharactersService.getCountCharsToQuery(testRequest));
     }
